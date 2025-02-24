@@ -22,3 +22,23 @@ See [Allen Institute Terms of Use](https://alleninstitute.org/legal/terms-use/)
 
 
 © 2019 Allen Institute for Brain Science
+
+# Run the additional scripts
+Create an environment via the environment.yml file:
+```bash
+conda env create -f environment.yml
+conda activate neuropixels_platform_paper_test
+```
+
+Then, edit the PATH VARIABLES in the `common/paths.py` file to point to the correct directories on your machine.
+If you do not have a `ecephys_cache_dir` please create one.
+Then run the file to create the units table, which contains layer information for each unit:
+```bash
+python common/create_units_table.py
+```
+
+Now you can run `generate_figures_for_each_layer.py` to generate the figures for each layer. N.B. this script will take a long time to run the first time, as it will download the necessary data from the Allen Institute's servers. Please edit the PATH VARIABLES in the `common/paths.py` file to point to the correct directories on your machine as before.
+```bash
+python generate_figures_for_each_layer.py
+```
+

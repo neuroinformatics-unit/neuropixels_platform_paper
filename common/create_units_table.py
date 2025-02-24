@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+# %%
 import os
 
 import numpy as np
@@ -18,8 +18,8 @@ from allensdk.brain_observatory.ecephys.ecephys_session import (
 # and Extended Data Figures 1, 4, and 10
 
 ### PATH VARIABLES ##############################
-cache_directory = '/mnt/nvme0/ecephys_cache_dir_2'
-code_directory = '/home/joshs/GitHub/neuropixels_platform_paper'
+cache_directory = '/Users/lauraporta/local1/ecephys_cache_dir/'
+code_directory = '/Users/lauraporta/Source/github/AllenInstitute/neuropixels_platform_paper/'
 ###################################################
 
 # %%
